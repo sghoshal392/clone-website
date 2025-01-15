@@ -17,6 +17,15 @@ border-radius: 50%;
 position: fixed;
 z-index: 99;
 }
+#cursor-blur{
+    height: 400px;
+    width: 400px;
+    background-color: #96c11e4c;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(50px);
+    z-index: 9;
+    }
 #nav{
     height: 145px;
     width: 100%;
@@ -55,6 +64,7 @@ background-color: rgba(0, 0, 0, 0.362);
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    z-index: 10;
 }
 #page1 h1{
     font-size: 140px;
@@ -85,4 +95,16 @@ background-color: rgba(0, 0, 0, 0.362);
 #page2{
     height: 100vh;
     width: 100%;
+    z-index: 10;
+}
+#scroller{
+    white-space: nowrap;
+    font-size: 140px;
+    font-weight: 900px;
+    font-family: gilroy;
+    color: transparent;
+    -webkit-text-stroke: 2px #95C11E;
+    overflow-x: auto;
+    overflow-y: hidden;
+    animation-duration: 0s;
 }
