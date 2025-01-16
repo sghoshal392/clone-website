@@ -100,11 +100,38 @@ background-color: rgba(0, 0, 0, 0.362);
 #scroller{
     white-space: nowrap;
     font-size: 140px;
-    font-weight: 900px;
-    font-family: gilroy;
+    font-weight: 900;
     color: transparent;
-    -webkit-text-stroke: 2px #95C11E;
+    position: relative;
+    animation: scroll 1s linear infinite;
     overflow-x: auto;
-    overflow-y: hidden;
-    animation-duration: 0s;
+    overflow-y: hidden
+}
+#about-us{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+#about-us img{
+    height: 220px;
+    width: 220px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+#about-us-in{
+    width: 40%;
+    text-align: center;
+}
+#about-us-in h3{
+    font-size: 54px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+#about-us-in p{
+    font-size: 20px;
+    line-height: 26px;
 }
